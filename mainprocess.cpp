@@ -57,9 +57,9 @@ del.qtable();
 
 
 
-    model = new QSqlTableModel(this,  Databasee);
-    model->setTable("PatientsInfo");
-    model->setEditStrategy(QSqlTableModel::OnManualSubmit);
+   model = new QSqlTableModel(this,  Databasee);
+   model->setTable("PatientsInfo");
+   model->setEditStrategy(QSqlTableModel::OnManualSubmit);
    model->select();
    model->setHeaderData(0, Qt::Horizontal, QObject::tr("PatientsName"));
    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Age")) ;
